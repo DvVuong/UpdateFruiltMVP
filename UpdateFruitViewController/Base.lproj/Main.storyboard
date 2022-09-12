@@ -76,11 +76,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JS8-yw-dvc">
-                                <rect key="frame" x="32" y="144" width="350" height="50"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPF-3i-EKn">
+                                <rect key="frame" x="32" y="194" width="350" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="LPd-yh-f4l"/>
-                                    <constraint firstAttribute="height" constant="50" id="bpl-JL-BRU"/>
+                                    <constraint firstAttribute="width" constant="350" id="IGR-7b-pA1"/>
+                                    <constraint firstAttribute="height" constant="50" id="g5h-hI-ZPq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -89,10 +89,13 @@
                         <viewLayoutGuide key="safeArea" id="ZFt-Pz-SKx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="JS8-yw-dvc" firstAttribute="top" secondItem="ZFt-Pz-SKx" secondAttribute="top" constant="100" id="VTx-rS-JUK"/>
-                            <constraint firstItem="JS8-yw-dvc" firstAttribute="centerX" secondItem="ZFt-Pz-SKx" secondAttribute="centerX" id="vJC-du-VAP"/>
+                            <constraint firstItem="pPF-3i-EKn" firstAttribute="centerX" secondItem="ZFt-Pz-SKx" secondAttribute="centerX" id="BKh-gc-sVa"/>
+                            <constraint firstItem="pPF-3i-EKn" firstAttribute="top" secondItem="ZFt-Pz-SKx" secondAttribute="top" constant="150" id="f52-La-Spg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tfNameFruilt" destination="pPF-3i-EKn" id="ihX-cw-OHO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="soE-lh-UF8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,6 +12,7 @@ protocol UpdateFruiltPresenterView: AnyObject {
 class UpdateFruiltPresenter {
     private weak var view: UpdateFruiltPresenterView?
     private var data: FruiltData!
+    
     init(with view: UpdateFruiltPresenterView, data: FruiltData) {
         self.view = view
         self.data = data

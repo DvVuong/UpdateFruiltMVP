@@ -34,8 +34,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         fruitTable.deselectRow(at: indexPath, animated: true)
-        let vc = UpdateFruiltViewController.instance()
-     
+        let vc = UpdateFruiltViewController.instance(data: fruilt[indexPath.row])
+        //vc.delegate = self
         navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -48,3 +48,10 @@ extension ViewController: PresenterDelegate {
        
     }
 }
+//extension ViewController: UpdateFruiltViewdelegate {
+//    func updateFruiltViewController(_ vc: UpdateFruiltViewController) {
+//        <#code#>
+//    }
+//
+//
+//}
